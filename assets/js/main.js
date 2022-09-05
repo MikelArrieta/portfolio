@@ -18,7 +18,7 @@ if (navClose) {
 /*==================== Remove menu mobile ====================*/
 const navLinks = document.querySelectorAll('.nav__link');
 
-function linkAction () {
+function linkAction() {
    const navMenu = document.getElementById('nav-menu');
    navMenu.classList.remove('show-menu');
 }
@@ -29,7 +29,7 @@ navLinks.forEach(n => n.addEventListener('click', linkAction));
 const skillsContent = document.getElementsByClassName('skills__content');
 const skillsHeader = document.querySelectorAll('.skills__header');
 
-function togggleSkills () {
+function togggleSkills() {
    let itemClass = this.parentNode.className;
 
    for (let i = 0; i < skillsContent.length; i++) {
@@ -71,7 +71,7 @@ const modalViews = document.querySelectorAll('.services__modal');
 const modalBtns = document.querySelectorAll('.services__button');
 const modalCloses = document.querySelectorAll('.services__modal-close');
 
-function openModal (modalIndex) {
+function openModal(modalIndex) {
    modalViews[modalIndex].classList.add('active-modal');
 }
 
@@ -87,4 +87,17 @@ modalCloses.forEach((modalClose) => {
          modalView.classList.remove('active-modal');
       });
    });
+});
+
+let swiper = new Swiper('.portfolio__container', {
+   cssMode: true,
+   loop: true,
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
 });
