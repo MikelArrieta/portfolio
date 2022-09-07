@@ -973,7 +973,7 @@ img {
       justify-self: center;
    }
    .about__container,
-   /* .skills__container (not working) */ 
+   .skills__container,
    .portfolio__content,
    .project__container,
    .contact__container,
