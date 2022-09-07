@@ -105,7 +105,7 @@ let swiper = new Swiper('.portfolio__container', {
 /*==================== Scroll sections active link ====================*/
 const sections = document.querySelectorAll('section[id]');
 
-function scrollActive () {
+function scrollActive() {
    const scrollY = window.scrollY;
 
    sections.forEach(current => {
@@ -122,3 +122,23 @@ function scrollActive () {
 }
 
 window.addEventListener('scroll', scrollActive);
+
+/*==================== Change background header ====================*/
+function scrollHeader() {
+   const nav = document.getElementById('header');
+   // When the scroll is greater than 80 viewport height, and the scroll-header class to the header tag
+   if (window.scrollY >= 80) nav.classList.add('scroll-header');
+   else nav.classList.remove('scroll-header');
+}
+
+window.addEventListener('scroll', scrollHeader);
+
+/*==================== Show scroll up ====================*/
+function scrollUp() {
+   const scrollUp = document.getElementById('scroll-up');
+   // When the scroll is higher than 560 viewport height, add the show-scroll class to the tag with the scroll-up class
+   if (window.scrollY >= 560) scrollUp.classList.add('show-scroll');
+   else scrollUp.classList.remove('show-scroll');
+}
+
+window.addEventListener('scroll', scrollUp);
