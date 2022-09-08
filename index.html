@@ -11,6 +11,9 @@
       <!--===================== SWIPER CSS =====================-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
+      <!--===================== TOASTIFY =====================-->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
       <!--===================== CSS =====================-->
       <link rel="stylesheet" href="./assets/css/styles.css">
       <title>mike.dev</title>
@@ -899,20 +902,16 @@
                   <div class="contact__inputs grid">
                      <div class="contact__content">
                         <label for="" class="contact__label">Name</label>
-                        <input type="text" class="contact__input">
+                        <input type="text" name="name" required="true" class="contact__input">
                      </div>
                      <div class="contact__content">
                         <label for="" class="contact__label">Email</label>
-                        <input type="email" class="contact__input">
+                        <input type="email" name="email" required="true" class="contact__input">
                      </div>
                   </div>
                   <div class="contact__content">
-                     <label for="" class="contact__label">Project</label>
-                     <input type="text" class="contact__input">
-                  </div>
-                  <div class="contact__content">
                      <label for="" class="contact__label">Message</label>
-                     <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                     <textarea name="message" required="true" id="" cols="0" rows="7" class="contact__input"></textarea>
                   </div>
 
                   <div>
@@ -971,5 +970,11 @@
 
       <!--==================== MAIN JS ====================-->
       <script src="./assets/js/main.js" type="module"></script>
+      
+      <!--==================== EMAIL JS ====================-->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <!--==================== TOASTIFY ====================-->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
    </body>
 </html>

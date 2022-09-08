@@ -173,7 +173,38 @@ themeButton.addEventListener('click', () => {
    localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+/*==================== Send email ====================*/
+if (emailjs) emailjs.init('LgWHjXgehmJQgV50l');
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
    event.preventDefault();
-   console.log(event);
+
+   if (emailjs) {
+      emailjs.sendForm('contact_service', 'contact_form', form)
+         .then(() => {
+            Toastify({
+               text: 'Email sent successfully',
+               duration: 3000,
+               close: true,
+               gravity: 'bottom',
+               position: 'center',
+               stopOnFocus: true,
+               style: {
+                  background: 'var(--first-color)',
+               },
+            }).showToast();
+
+            clearInputs();
+         }, (error) => {
+            console.log('FAILED...', error);
+            clearInputs();
+         });
+   }
 });
+
+function clearInputs() {
+   form.name.value = null;
+   form.email.value = null;
+   form.message.value = null;
+}
