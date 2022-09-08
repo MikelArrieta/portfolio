@@ -172,3 +172,8 @@ themeButton.addEventListener('click', () => {
    localStorage.setItem('selected-theme', getCurrentTheme());
    localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+   event.preventDefault();
+   console.log(event);
+});

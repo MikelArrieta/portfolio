@@ -130,6 +130,11 @@ img {
    height: auto;
 }
 
+button {
+   all: unset;
+   cursor: pointer;
+}
+
 /*==================== Reusable CSS classes ====================*/
 .section {
    padding: 2rem 0 4rem;
