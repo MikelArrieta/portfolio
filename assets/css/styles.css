@@ -493,6 +493,7 @@ img {
    background-color: var(--first-color);
 }
 
+/* Skills by percentage */
 .skills__95  { width: 95%; }
 .skills__90  { width: 90%; }
 .skills__85  { width: 85%; }
@@ -699,7 +700,7 @@ img {
 }
 
 .portfolio__img {
-   width: 265px;
+   /* width: 265px; */
    border-radius: .5rem;
    justify-self: center;
 }
@@ -1078,9 +1079,10 @@ img {
    .services__modal-content {
       width: 450px;
    }
-   .portfolio__img {
+   /* disabled */
+   /* .portfolio__img {
       width: 320px;
-   }
+   } */
    .portfolio__content {
       align-items: center;
    }
