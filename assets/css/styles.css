@@ -980,15 +980,9 @@ img {
    .footer__container {
       grid-template-columns: repeat(2, 1fr);
    }
-
-   /* not working */
-   /* .skills__container {
-      grid-template-columns: repeat(2, 1fr);
-   } */
-
    .qualification__sections {
       display: grid;
-      grid-template-columns: .6fr;
+      grid-template-columns: .7fr;
       justify-content: center;
    }
 }
@@ -1068,9 +1062,6 @@ img {
    }
    .qualification__button {
       margin: 0 var(--mb-1);
-   }
-   .qualification__sections {
-      grid-template-columns: .5fr;
    }
    .services__container {
       grid-template-columns: repeat(3, 218px);
