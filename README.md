@@ -1,6 +1,8 @@
 # Portfolio website
 Personal portfolio website, created using HTML, CSS and Javascript, and [Vite](https://vitejs.dev/) as development server and build tool.
 
+![alt text](./assets/img/portfolio.png)
+
 ## Usage
 Clone the project using `git clone` command:
 ```bash
