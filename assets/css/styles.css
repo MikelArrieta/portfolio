@@ -765,6 +765,7 @@ button {
 .project__bg {
    background-color: var(--first-color-second);
    padding-top: 3rem;
+   padding-bottom: 2rem;
 }
 
 .project__title {
@@ -986,7 +987,7 @@ button {
    .about__container,
    .skills__container,
    .portfolio__content,
-   .project__container,
+   /* .project__container, disabled */
    .contact__container,
    .footer__container {
       grid-template-columns: repeat(2, 1fr);
@@ -1091,11 +1092,11 @@ button {
    /* .portfolio__img {
       width: 320px;
    } */
+   /* .project {
+      text-align: initial;
+   } */
    .portfolio__content {
       align-items: center;
-   }
-   .project {
-      text-align: initial;
    }
    .project__bg {
       background: none;
@@ -1103,9 +1104,8 @@ button {
    .project__container {
       background-color: var(--first-color-second);
       border-radius: 1rem;
-      padding: 3rem 2.5rem 0;
-      grid-template-columns: 1fr max-content;
-      column-gap: 3rem;
+      padding: 3rem 2.5rem 2rem;
+      grid-template-columns: 1fr;
    }
    .project__data {
       padding-top: .8rem;

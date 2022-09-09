@@ -1,3 +1,6 @@
+/*==================== Constants ====================*/
+const EMAILJS_API_KEY = 'LgWHjXgehmJQgV50l';
+
 /*==================== Menu show/hide ====================*/
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -174,7 +177,7 @@ themeButton.addEventListener('click', () => {
 });
 
 /*==================== Send email ====================*/
-if (emailjs) emailjs.init('LgWHjXgehmJQgV50l');
+if (emailjs) emailjs.init(EMAILJS_API_KEY);
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', (event) => {
